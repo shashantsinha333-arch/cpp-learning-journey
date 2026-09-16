@@ -1,38 +1,37 @@
 #include <iostream>
-#include <string>
-
 using namespace std;
 
 int main(){
-    string name;
-    int age;
-    float height;
-    double weight;
-    char firstletter;
+    int a;
+    int b;
 
-    cout<<"Enter your name:";
-    cin>>name;
+    cout<<"Enter first number:";
+    cin>>a;
 
-    cout<<"Enter your age:";
-    cin>>age;
+    cout<<"enter second number:";
+    cin>>b;
 
-    cout<<"Enter your height";
-    cin>>height;
+    int sum = a+b;
+    int diff = a-b;
+    int product = a*b;
+    int quotient = a/b;
+    int remainder= a%b;
+    cout<<sum<<"\n";
+    cout<<diff<<"\n";
+    cout<<product<<"\n";
+    cout<<quotient<<"\n";
+    cout<<remainder<<"\n";
 
-    cout<<"Enter your weight:";
-    cin>>weight;
+    bool greater = a>b;
+    cout<<greater<<"\n";
 
-    cout<<"Enter first letter of your city:";
-    cin>>firstletter;
+    bool positive = (a>0)&&(b>0);
+    cout<<boolalpha;
+    cout<<greater<<"\n";
 
-    int sum = age + 1;
+    bool negative =(a<0)||(b<0);
+    cout<<boolalpha;
+    cout<<negative;
 
-
-    cout<<"Your name is "<<name<<"\n";
-    cout<<" You are "<<age<<" years old "<<"\n";
-    cout<<" Your height is "<<height<<"\n";
-    cout<<" Your weight is "<<weight<<"\n";
-    cout<<" First letter of your city is "<<firstletter<<"\n";
-    cout<<" After 1 year you will "<<sum<<" years old ";
     return 0;
 }
