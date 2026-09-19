@@ -2,36 +2,45 @@
 using namespace std;
 
 int main(){
-    int a;
-    int b;
 
-    cout<<"Enter first number:";
-    cin>>a;
+    int day;
 
-    cout<<"enter second number:";
-    cin>>b;
+    cout<<"Enter your day:";
+    cin>>day;
 
-    int sum = a+b;
-    int diff = a-b;
-    int product = a*b;
-    int quotient = a/b;
-    int remainder= a%b;
-    cout<<sum<<"\n";
-    cout<<diff<<"\n";
-    cout<<product<<"\n";
-    cout<<quotient<<"\n";
-    cout<<remainder<<"\n";
+    switch (day){
 
-    bool greater = a>b;
-    cout<<greater<<"\n";
+        case 1:
+        cout<<"Monday";
+        break;
 
-    bool positive = (a>0)&&(b>0);
-    cout<<boolalpha;
-    cout<<greater<<"\n";
+        case 2:
+        cout<<"Tuesday";
+        break;
 
-    bool negative =(a<0)||(b<0);
-    cout<<boolalpha;
-    cout<<negative;
+        case 3:
+        cout<<"Wednesday";
+        break;
+
+        case 4:
+        cout<<"Thursday";
+        break;
+
+        case 5:
+        cout<<"Friday";
+        break;
+
+        case 6:
+        cout<<"Staurday";
+        break;
+
+        case 7:
+        cout<<"Sunday";
+        break;
+
+        default:
+        cout<<"Invalid day";
+    }
 
     return 0;
 }
